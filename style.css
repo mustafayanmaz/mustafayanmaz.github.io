@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(90deg, #07050f, #1c1035);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #4ea6c446;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+nav a:hover {
+    color: #00a2ff;
+}
+
+/* Main Content Styling */
+.main-content, .contact-section, .container {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    margin-top: 40px;
+    color: #ddd;
+}
+
+.contact-section {
+    width: 100%;
+}
+
+/* Avatar Styling */
+.avatar {
+    margin-bottom: 20px;
+    background-color: #ffffff1a;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.avatar-image {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.name {
+    color: #4304f5;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+/* About and Projects h1 */
+.container h1 {
+    font-size: 4em;
+    color: #ccc;
+}
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #946bf7;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.3em;
+    line-height: 2;
+    color: #ddd;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff0d;
+    border-radius: 10px;
+    max-width: 800px; /*90% da olabilir ama form küçülüyo*/
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input, Textarea, Button Styling */
+input,
+textarea,
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+}
+
+button {
+    padding: 12px; /**/
+    background:  #6a95ff;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.feedback {
+    color: #f88;
+}
+
+/* About Section, Skills, and Interests */
+.about-section,
+.skills,
+.interests {
+    background: #ffffff0a;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 8px;
+}
+.skills ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+/* Projects Styling */
+.filter-menu select {
+    padding: 15px;
+    background-color: #0095ffcc;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.project {
+    background: #ffffff0d;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.3s;
+    color: #a67dfd;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about h3, .skills h3 , .interests h3 , .project h3{
+    font-size: 35px;
+    color: #a67dfd;
+    margin-top: 10px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalDescription {
+    color: #ddd;
+    padding: 50px;
+    font-size: 1.1em;
+}
+
+/* DateTime and Social Media */
+.datetime-container {
+    color: #d6a3ff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.social-media-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 90px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.download-btn {
+    background: #a67dfd;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .contact-section form div label,
+    .datetime-container {
+        font-size: 0.9rem;
+    }
+    .social-media-container .social-icon {
+        width: 40px;
+        height: auto;
+    }
+    .modal {
+        flex-direction: column;
+    }
+    .modal-content {
+        margin-top: 50px;
+        max-width: 90%;
+        max-height: 80%; 
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

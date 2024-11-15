@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="C:\Users\yanmu\Desktop\web ödev yeni\images\avatar.png"
+    />
+    <!-- İcon -->
+    <title>Mustafa Yanmaz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="about.html">Hakkımda</a></li>
+        <li><a href="projects.html">Projelerim</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="main-content">
+      <div class="avatar">
+        <img src="images/avatar.png" alt="Avatar" class="avatar-image" />
+      </div>
+      <h1>
+        Merhaba; <br />
+        Ben <span class="name">Mustafa Yanmaz.</span>
+      </h1>
+      <h2>Web & Mobil Kodluyorum.</h2>
+    </section>
+
+    <!-- İletişim Formu -->
+    <section class="contact-section">
+    <h1>İletişim Formu</h1>
+    <form id="contactForm">
+        <div>
+            <label for="name">İsim:</label>
+            <input type="text" id="name" name="name" />
+        </div>
+        <div>
+            <label for="email">E-posta:</label>
+            <input type="text" id="email" name="email"  />
+        </div>
+        <div>
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" ></textarea>
+        </div>
+        <button type="submit">Gönder</button>
+    </form>
+    <div id="feedback" class="feedback"></div>
+</section>
+
+<!--Social Medai Section-->
+    <section>
+      <div class="social-media-container">
+        <h2>İletişim</h2>
+        <div class="logos">
+          <a
+            href="https://www.instagram.com/ynmz.m/"
+            target="_blank"
+            aria-label="My Instagram"
+          >
+            <img
+              src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo-500x281.png"
+              alt="Instagram"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mustafa-yanmaz-834bb1262/"
+            target="_blank"
+            aria-label="My LinkedIn"
+          >
+            <img
+              src="https://1000logos.net/wp-content/uploads/2023/01/LinkedIn-logo-500x281.png"
+              alt="LinkedIn"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://github.com/mustafayanmaz"
+            target="_blank"
+            aria-label="My GitHub"
+          >
+            <img
+              src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo-500x281.png"
+              alt="GitHub"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="mailto:mustafa.yanmaz.tr@gmail.com"
+            target="_blank"
+            aria-label="My Gmail"
+          >
+            <img
+              src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo-500x281.png"
+              alt="Gmail"
+              class="social-icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="datetime-container">
+      <p id="current-date"></p>
+      <p id="current-time"></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

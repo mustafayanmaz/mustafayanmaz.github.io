@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="icon"
+      type="image/png"
+      href="C:\Users\yanmu\Desktop\web ödev yeni\images\avatar.png"
+    />
+  <title>Projelerim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="about.html">Hakkımda</a></li>
+      <li><a href="projects.html">Projelerim</a></li>
+    </ul>
+  </nav>
+  
+ <!-- Main Content -->
+<div class="container">
+  <h1>Projelerim</h1>
+  <br><br>
+
+  <!-- Sorting -->
+  <div class="filter-menu">
+    <select id="sirala" onchange="sirala()">
+      <option value="enSon">En Son Projeler</option>
+      <option value="enIyi">En Beğenilen Projeler</option>
+    </select>
+  </div>
+  <!--Projects-->
+  <div id="projects">
+    <!-- Project 1 -->
+    <div class="project" tarih="2024-10-01" begeni="2" onclick="fotoBuyult('images/petcare2.png', 'Hayvan bakımı için hatırlatmalar sağlayan bir uygulama. Bu uygulama, evcil hayvan sahiplerinin günlük bakım rutinlerini düzenlemelerine ve takip etmelerine yardımcı olur. Beslenme, temizlik, oyun süresi ve veteriner randevuları gibi önemli bakım görevlerini hatırlatır. Ayrıca, kullanıcılar hayvanlarının gelişim süreçlerini ve sağlık durumlarını daha iyi analiz edebilmeleri için geçmiş verilerini de kaydedebilir.')">
+      <img src="images/petcare.png" alt="Pet Care Reminder Project">
+  
+      <br><br>
+      <h3>Pet Care Reminder System</h3>
+      <p>Hayvan bakımı için hatırlatmalar sağlayan bir uygulama.</p>
+    </div>
+    <!-- Project 2 -->
+    <div class="project" tarih="2024-05-20" begeni="3" onclick="fotoBuyult('images/calisan.png', 'Şirketler ve fabrikalar için çalışan verimliliğini artırmayı hedefleyen bir proje. EF Working uygulaması, çalışanların iş saatleri içinde odaklanmalarını sağlamak ve zaman yönetimini optimize etmek için geliştirilmiştir. Uygulama, iş verilerini analiz ederek kişiye özel öneriler sunar ve yöneticilere çalışan performansını objektif şekilde değerlendirme olanağı tanır.')">
+      <img src="images/yonetici.png" alt="EF Working">
+      <br><br>
+      <h3>EF Working</h3>
+      <p>Çalışanların mesai saatleri içerisinde yalnızca işlerine odaklanmalarını sağlamak için geliştirdiğimiz uygulama EF Working.</p>
+    </div>
+
+    <div class="project" tarih="2024-07-15" begeni="2" onclick="fotoBuyult('images/library2.png', 'Kütüphaneler için geliştirilen bu uygulama, kitapları kolayca eklemeyi, listelemeyi ve aramayı sağlar. Kullanıcılar, istedikleri kitabı arayarak hızlıca bulabilir ve ödünç alabilir. Ayrıca, ödünç alınan kitapların iade süresi takip edilebilir ve kitaplar geri iade edildiğinde sistem otomatik olarak güncellenir. Bu uygulama, kütüphane yöneticilerinin kitap envanterini verimli bir şekilde yönetmelerine yardımcı olur.')">
+      <img src="images/library.png" alt="Library App">
+      <br><br>
+      <h3>Library App</h3>
+      <p>Kütüphanelerde kitap ekleme, listeleme, arama, ödünç alma ve iade etme işlemleri için geliştirilmiş uygulama.</p>
+  </div>
+  
+  
+  </div>
+</div>
+
+
+  <!-- Modal Structure -->
+<div id="modal" class="modal" onclick="fotoKucult()">   
+    <img class="modal-content" id="modalImage" alt="Project Image">
+    <div id="modalDescription"></div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

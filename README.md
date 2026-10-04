@@ -1,17 +1,17 @@
-# mustafayanmaz.com — Portfolio
+# Mustafa Yanmaz
 
-Mustafa Yanmaz kişisel portfolyo sitesi.
+Merhaba, ben Mustafa Yanmaz.
 
-## Yerelde çalıştırma
+Backend Software Engineer olarak Spring Boot, ASP.NET Core, RESTful API'ler, PostgreSQL ve mikroservis mimarileri üzerine çalışıyorum. Güvenli, sürdürülebilir ve ölçeklenebilir backend çözümleri geliştirmeye odaklanıyorum.
 
-Herhangi bir statik HTTP server ile açılabilir:
+Recep Tayyip Erdoğan Üniversitesi Bilgisayar Mühendisliği mezunuyum. Yazılım geliştirme stajlarım, üniversite projelerim, yapay zeka destekli ağ güvenliği bitirme tezim ve paralel programlama çalışmalarım backend mühendisliği odağımı güçlendirdi.
 
-```bash
-python -m http.server 8000
-```
+Teknik olarak özellikle mikroservisler, API tasarımı, veritabanı yönetimi, kimlik doğrulama, yetkilendirme ve yazılım güvenliği alanlarıyla ilgileniyorum. Java, Spring Boot, ASP.NET Core, PostgreSQL, RabbitMQ, Docker, JWT ve Keycloak gibi teknolojilerle çalışıyorum.
 
-Ardından `http://localhost:8000`.
+Bu alanlarda kendimi sürekli geliştirmeye, gerçek problemlere temiz ve sürdürülebilir çözümler üretmeye önem veriyorum.
 
-## GitHub Pages
+## İletişim
 
-Bu repo `mustafayanmaz.github.io` adıyla yayınlanabilir. Daha sonra custom domain olarak `mustafayanmaz.com` bağlanabilir.
+- E-posta: `mustafa.yanmaz.tr@gmail.com`
+- LinkedIn: `https://www.linkedin.com/in/mustafa-yanmaz`
+- GitHub: `https://github.com/mustafayanmaz`

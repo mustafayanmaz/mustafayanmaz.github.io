@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=8" />
 </head>
 <body>
   <div class="cursor-inner" id="cursor-inner"></div>
@@ -30,23 +30,24 @@
         <span>MY</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#home" data-section="home">&lt;/Anasayfa&gt;</a></li>
-        <li><a href="#about" data-section="about">&lt;/Hakkımda&gt;</a></li>
-        <li><a href="#projects" data-section="projects">&lt;/Projeler&gt;</a></li>
-        <li><a href="#skills" data-section="skills">&lt;/Yetenekler&gt;</a></li>
-        <li><a href="#footer" data-section="footer">&lt;/İletişim&gt;</a></li>
+        <li><a href="#home" data-section="home" data-i18n="nav.home">&lt;/Anasayfa&gt;</a></li>
+        <li><a href="#about" data-section="about" data-i18n="nav.about">&lt;/Hakkımda&gt;</a></li>
+        <li><a href="#projects" data-section="projects" data-i18n="nav.projects">&lt;/Projeler&gt;</a></li>
+        <li><a href="#skills" data-section="skills" data-i18n="nav.skills">&lt;/Yetenekler&gt;</a></li>
+        <li><a href="#footer" data-section="footer" data-i18n="nav.contact">&lt;/İletişim&gt;</a></li>
       </ul>
       <div class="nav-actions">
+        <button class="language-toggle" id="languageToggle" aria-label="Switch to English" title="Switch to English">EN</button>
         <button class="mode-toggle" id="modeToggle" aria-label="Tema değiştir" title="Tema değiştir">☾</button>
         <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
       </div>
     </nav>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#home" data-section="home">&lt;/Anasayfa&gt;</a>
-      <a href="#about" data-section="about">&lt;/Hakkımda&gt;</a>
-      <a href="#projects" data-section="projects">&lt;/Projeler&gt;</a>
-      <a href="#skills" data-section="skills">&lt;/Yetenekler&gt;</a>
-      <a href="#footer" data-section="footer">&lt;/İletişim&gt;</a>
+      <a href="#home" data-section="home" data-i18n="nav.home">&lt;/Anasayfa&gt;</a>
+      <a href="#about" data-section="about" data-i18n="nav.about">&lt;/Hakkımda&gt;</a>
+      <a href="#projects" data-section="projects" data-i18n="nav.projects">&lt;/Projeler&gt;</a>
+      <a href="#skills" data-section="skills" data-i18n="nav.skills">&lt;/Yetenekler&gt;</a>
+      <a href="#footer" data-section="footer" data-i18n="nav.contact">&lt;/İletişim&gt;</a>
     </div>
   </header>
 
@@ -54,7 +55,7 @@
     <section class="hero section" id="home">
       <div class="blob blob-one"></div>
       <div class="hero-content">
-        <p class="code-kicker">Merhaba(); Ben</p>
+        <p class="code-kicker" data-i18n="hero.greeting">Merhaba(); Ben</p>
         <h1 class="jello-title" aria-label="Mustafa Yanmaz.">
           <span class="jello-word"><span class="jello-letter">M</span><span class="jello-letter">u</span><span class="jello-letter">s</span><span class="jello-letter">t</span><span class="jello-letter">a</span><span class="jello-letter">f</span><span class="jello-letter">a</span></span>
           <span class="jello-word"><span class="jello-letter">Y</span><span class="jello-letter">a</span><span class="jello-letter">n</span><span class="jello-letter">m</span><span class="jello-letter">a</span><span class="jello-letter">z</span><span class="jello-letter">.</span></span>
@@ -64,13 +65,13 @@
           <span class="jello-word"><span class="jello-letter">S</span><span class="jello-letter">o</span><span class="jello-letter">f</span><span class="jello-letter">t</span><span class="jello-letter">w</span><span class="jello-letter">a</span><span class="jello-letter">r</span><span class="jello-letter">e</span></span>
           <span class="jello-word"><span class="jello-letter">E</span><span class="jello-letter">n</span><span class="jello-letter">g</span><span class="jello-letter">i</span><span class="jello-letter">n</span><span class="jello-letter">e</span><span class="jello-letter">e</span><span class="jello-letter">r</span></span>
         </h2>
-        <p class="hero-text">Spring Boot, ASP.NET Core, RESTful API'ler, PostgreSQL ve mikroservis tabanlı sistemler üzerine odaklanıyorum. Güvenli, sürdürülebilir ve ölçeklenebilir backend çözümleri geliştiriyorum.</p>
+        <p class="hero-text" data-i18n="hero.text">Spring Boot, ASP.NET Core, RESTful API'ler, PostgreSQL ve mikroservis tabanlı sistemler üzerine odaklanıyorum. Güvenli, sürdürülebilir ve ölçeklenebilir backend çözümleri geliştiriyorum.</p>
         <div class="hero-tech" aria-label="Öne çıkan teknolojiler">
           <span>Java</span><span>Spring Boot</span><span>ASP.NET Core</span><span>PostgreSQL</span><span>Docker</span>
         </div>
         <div class="hero-actions">
-          <a class="btn primary" href="#projects">Projelerimi Gör</a>
-          <a class="btn ghost" href="src/pdf/MustafaYanmazCVTr.pdf" target="_blank" rel="noopener">CV'yi Aç</a>
+          <a class="btn primary" href="#projects" data-i18n="hero.projectsButton">Projelerimi Gör</a>
+          <a class="btn ghost" id="cvLink" href="src/pdf/MustafaYanmazCVTr.pdf" target="_blank" rel="noopener" data-i18n="hero.cvButton">CV'yi Aç</a>
         </div>
       </div>
       <aside class="hero-card" aria-label="Kısa profil">
@@ -91,32 +92,32 @@
 
     <section class="section about" id="about">
       <div class="section-shell">
-        <div class="section-heading"><h2>&lt;/Hakkımda&gt;</h2><span></span></div>
+        <div class="section-heading"><h2 data-i18n="about.heading">&lt;/Hakkımda&gt;</h2><span></span></div>
         <div class="about-grid">
           <div class="about-copy">
-            <p>Backend geliştirme alanına odaklanan Bilgisayar Mühendisiyim. Spring Boot, ASP.NET Core, RESTful API'ler, PostgreSQL ve mikroservis tabanlı uygulamalarda uygulamalı deneyime sahibim. Keycloak, JWT, RabbitMQ ve Docker gibi araçlarla güvenli ve ölçeklenebilir yazılım çözümleri geliştirdim.</p>
-            <p>Recep Tayyip Erdoğan Üniversitesi Bilgisayar Mühendisliği lisans eğitimimi 2026'da tamamladım. Yazılım geliştirme stajları, üniversite projeleri, yapay zekâ destekli ağ güvenliği bitirme tezi ve paralel programlama çalışmalarım ile backend mühendisliği odağımı güçlendirdim.</p>
+            <p data-i18n="about.paragraph1">Backend geliştirme alanına odaklanan Bilgisayar Mühendisiyim. Spring Boot, ASP.NET Core, RESTful API'ler, PostgreSQL ve mikroservis tabanlı uygulamalarda uygulamalı deneyime sahibim. Keycloak, JWT, RabbitMQ ve Docker gibi araçlarla güvenli ve ölçeklenebilir yazılım çözümleri geliştirdim.</p>
+            <p data-i18n="about.paragraph2">Recep Tayyip Erdoğan Üniversitesi Bilgisayar Mühendisliği lisans eğitimimi 2026'da tamamladım. Yazılım geliştirme stajları, üniversite projeleri, yapay zekâ destekli ağ güvenliği bitirme tezi ve paralel programlama çalışmalarım ile backend mühendisliği odağımı güçlendirdim.</p>
             <div class="about-mini-grid">
-              <div><strong>Konum</strong><span>Türkiye</span></div>
-              <div><strong>İngilizce</strong><span>B2 — Upper Intermediate</span></div>
-              <div><strong>Odak</strong><span>Backend & Microservices</span></div>
-              <div><strong>Eğitim</strong><span>Computer Engineering</span></div>
+              <div><strong data-i18n="about.locationLabel">Konum</strong><span data-i18n="about.location">Türkiye</span></div>
+              <div><strong data-i18n="about.languageLabel">İngilizce</strong><span>B2 — Upper Intermediate</span></div>
+              <div><strong data-i18n="about.focusLabel">Odak</strong><span>Backend & Microservices</span></div>
+              <div><strong data-i18n="about.educationLabel">Eğitim</strong><span>Computer Engineering</span></div>
             </div>
           </div>
           <div class="profile-frame"><img src="src/webp/ben.webp" alt="Mustafa Yanmaz" /></div>
         </div>
 
-        <div class="subheading"><span>01.</span><h3>İş Tecrübelerim</h3></div>
+        <div class="subheading"><span>01.</span><h3 data-i18n="experience.heading">İş Tecrübelerim</h3></div>
         <div class="timeline">
           <article class="timeline-item featured">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
               <div class="timeline-top"><div><h4>Backend Development Intern</h4><p>Agito Software & Consulting</p></div><time>02/2026 — 05/2026</time></div>
               <ul>
-                <li>Spring Boot, katmanlı mimari, REST API, DTO, validation, mapping ve global exception handling ile stok yönetimi mikroservisi geliştirdim.</li>
-                <li>FIFO tabanlı stok düşümü, stok partisi izlenebilirliği ve ortalama maliyet hesaplama akışlarını uyguladım.</li>
-                <li>Keycloak/JWT, RabbitMQ e-posta bildirimleri ve Swagger/OpenAPI entegrasyonları gerçekleştirdim.</li>
-                <li>Git, Docker, test, debugging ve code review süreçlerine katkı sağladım.</li>
+                <li data-i18n="experience.agito1">Spring Boot, katmanlı mimari, REST API, DTO, validation, mapping ve global exception handling ile stok yönetimi mikroservisi geliştirdim.</li>
+                <li data-i18n="experience.agito2">FIFO tabanlı stok düşümü, stok partisi izlenebilirliği ve ortalama maliyet hesaplama akışlarını uyguladım.</li>
+                <li data-i18n="experience.agito3">Keycloak/JWT, RabbitMQ e-posta bildirimleri ve Swagger/OpenAPI entegrasyonları gerçekleştirdim.</li>
+                <li data-i18n="experience.agito4">Git, Docker, test, debugging ve code review süreçlerine katkı sağladım.</li>
               </ul>
               <div class="tag-row"><span>Spring Boot</span><span>Keycloak</span><span>JWT</span><span>RabbitMQ</span><span>Docker</span></div>
             </div>
@@ -125,11 +126,11 @@
           <article class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
-              <div class="timeline-top"><div><h4>Software Development Intern</h4><p>RTEÜ — Bilgi İşlem Daire Başkanlığı</p></div><time>06/2025 — 09/2025</time></div>
+              <div class="timeline-top"><div><h4>Software Development Intern</h4><p data-i18n="experience.rteuCompany">RTEÜ — Bilgi İşlem Daire Başkanlığı</p></div><time>06/2025 — 09/2025</time></div>
               <ul>
-                <li>ASP.NET Core, PostgreSQL, React ve Tailwind CSS ile full-stack ÇAYGEN çay fidanı izleme platformını geliştirdim ve yayına alma sürecinde görev aldım.</li>
-                <li>JWT authentication, role-based authorization, gelişmiş filtreleme, fidan profilleri, galeri ve audit logging geliştirdim.</li>
-                <li>PDF katalog verilerini Python ile işleyerek sisteme aktarılabilir hale getirdim.</li>
+                <li data-i18n="experience.rteu1">ASP.NET Core, PostgreSQL, React ve Tailwind CSS ile full-stack ÇAYGEN çay fidanı izleme platformını geliştirdim ve yayına alma sürecinde görev aldım.</li>
+                <li data-i18n="experience.rteu2">JWT authentication, role-based authorization, gelişmiş filtreleme, fidan profilleri, galeri ve audit logging geliştirdim.</li>
+                <li data-i18n="experience.rteu3">PDF katalog verilerini Python ile işleyerek sisteme aktarılabilir hale getirdim.</li>
               </ul>
               <div class="tag-row"><span>ASP.NET Core</span><span>PostgreSQL</span><span>React</span><span>Python</span></div>
             </div>
@@ -138,10 +139,10 @@
           <article class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
-              <div class="timeline-top"><div><h4>Milli Teknoloji Atölyesi Görevlisi</h4><p>RTEÜ — İŞKUR</p></div><time>12/2025 — 02/2026</time></div>
+              <div class="timeline-top"><div><h4 data-i18n="experience.workshopTitle">Milli Teknoloji Atölyesi Görevlisi</h4><p>RTEÜ — İŞKUR</p></div><time>12/2025 — 02/2026</time></div>
               <ul>
-                <li>3B baskı ve prototipleme süreçlerinde model kontrolü, baskı ayarı optimizasyonu ve üretim sonrası kalite kontrollerine destek verdim.</li>
-                <li>Teknik ekipman kullanımı, baskı sorunlarının giderilmesi ve öğrenci projelerinin üretime hazırlanmasında görev aldım.</li>
+                <li data-i18n="experience.workshop1">3B baskı ve prototipleme süreçlerinde model kontrolü, baskı ayarı optimizasyonu ve üretim sonrası kalite kontrollerine destek verdim.</li>
+                <li data-i18n="experience.workshop2">Teknik ekipman kullanımı, baskı sorunlarının giderilmesi ve öğrenci projelerinin üretime hazırlanmasında görev aldım.</li>
               </ul>
               <div class="tag-row"><span>3D Printing</span><span>Prototyping</span><span>Technical Support</span></div>
             </div>
@@ -150,10 +151,10 @@
           <article class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
-              <div class="timeline-top"><div><h4>Tasarım ve Prototipleme Görevlisi</h4><p>RTEÜ — Tasarım ve Prototipleme Atölyesi</p></div><time>03/2025 — 06/2025</time></div>
+              <div class="timeline-top"><div><h4 data-i18n="experience.designTitle">Tasarım ve Prototipleme Görevlisi</h4><p data-i18n="experience.designCompany">RTEÜ — Tasarım ve Prototipleme Atölyesi</p></div><time>03/2025 — 06/2025</time></div>
               <ul>
-                <li>Temel 3B modelleme ve tasarım düzenleme çalışmalarında görev aldım.</li>
-                <li>Bambu Studio, Ultimaker Cura ve Chitubox ile FDM ve reçine baskı dosyalarını hazırladım; Revo Scan ile 3B tarama uygulamaları gerçekleştirdim.</li>
+                <li data-i18n="experience.design1">Temel 3B modelleme ve tasarım düzenleme çalışmalarında görev aldım.</li>
+                <li data-i18n="experience.design2">Bambu Studio, Ultimaker Cura ve Chitubox ile FDM ve reçine baskı dosyalarını hazırladım; Revo Scan ile 3B tarama uygulamaları gerçekleştirdim.</li>
               </ul>
               <div class="tag-row"><span>Bambu Studio</span><span>Cura</span><span>Chitubox</span><span>Revo Scan</span></div>
             </div>
@@ -162,28 +163,28 @@
 
         <div class="education-card">
           <div class="edu-icon">🎓</div>
-          <div><span class="eyebrow">Eğitim</span><h3>Bilgisayar Mühendisliği — Lisans</h3><p>Recep Tayyip Erdoğan Üniversitesi</p><small>09/2021 — 07/2026 · Rize, Türkiye</small></div>
+          <div><span class="eyebrow" data-i18n="education.label">Eğitim</span><h3 data-i18n="education.degree">Bilgisayar Mühendisliği — Lisans</h3><p>Recep Tayyip Erdoğan Üniversitesi</p><small data-i18n="education.details">09/2021 — 07/2026 · Rize, Türkiye</small></div>
         </div>
       </div>
     </section>
 
     <section class="section projects" id="projects">
       <div class="section-shell wide">
-        <div class="section-heading"><h2>&lt;/Projelerim&gt;</h2><span></span></div>
-        <p class="section-intro">CV'mde yer alan projelerin tamamı. Öne çıkan kartlarda mimari, backend akışları, güvenlik, veri işleme ve performans detaylarını görebilirsin.</p>
+        <div class="section-heading"><h2 data-i18n="projects.heading">&lt;/Projelerim&gt;</h2><span></span></div>
+        <p class="section-intro" data-i18n="projects.intro">CV'mde yer alan projelerin tamamı. Öne çıkan kartlarda mimari, backend akışları, güvenlik, veri işleme ve performans detaylarını görebilirsin.</p>
 
         <div class="project-grid">
           <article class="project-card project-featured">
             <div class="project-number">01</div>
             <div class="project-content">
-              <span class="project-label">Lisans Bitirme Tezi · Featured</span>
-              <h3>Yapay Zekâ Destekli Gerçek Zamanlı IPv4/IPv6 IDS/IPS</h3>
-              <p>Orange Pi 5 üzerinde çalışan, gerçek zamanlı trafik analizi, tehdit puanlama ve otomatik IP engelleme yeteneklerine sahip uçtan uca saldırı tespit ve önleme prototipi.</p>
+              <span class="project-label" data-i18n="projects.idsLabel">Lisans Bitirme Tezi · Featured</span>
+              <h3 data-i18n="projects.idsTitle">Yapay Zekâ Destekli Gerçek Zamanlı IPv4/IPv6 IDS/IPS</h3>
+              <p data-i18n="projects.idsText">Orange Pi 5 üzerinde çalışan, gerçek zamanlı trafik analizi, tehdit puanlama ve otomatik IP engelleme yeteneklerine sahip uçtan uca saldırı tespit ve önleme prototipi.</p>
               <ul class="project-points">
-                <li>28 kontrollü saldırı senaryosu ile özel IPv4/IPv6 veri seti toplama ve etiketleme.</li>
-                <li>5 ML algoritmasının 6 açık kaynak IDS veri setinde karşılaştırılması.</li>
-                <li>İki aşamalı binary + multi-class sınıflandırma mimarisi.</li>
-                <li>1 saniyelik analiz döngüsü; flood testlerinde 50 ms'nin altında işlem süresi.</li>
+                <li data-i18n="projects.ids1">28 kontrollü saldırı senaryosu ile özel IPv4/IPv6 veri seti toplama ve etiketleme.</li>
+                <li data-i18n="projects.ids2">5 ML algoritmasının 6 açık kaynak IDS veri setinde karşılaştırılması.</li>
+                <li data-i18n="projects.ids3">İki aşamalı binary + multi-class sınıflandırma mimarisi.</li>
+                <li data-i18n="projects.ids4">1 saniyelik analiz döngüsü; flood testlerinde 50 ms'nin altında işlem süresi.</li>
               </ul>
               <div class="tag-row"><span>Python</span><span>Machine Learning</span><span>IPv4/IPv6</span><span>Orange Pi 5</span><span>Flask</span></div>
             </div>
@@ -197,13 +198,13 @@
             <div class="project-number">02</div>
             <div class="project-content">
               <span class="project-label">Backend · Microservice</span>
-              <h3>Stok Yönetimi Mikroservisi</h3>
-              <p>Gerçek stok hareketlerini, satış süreçlerini ve güvenli kullanıcı erişimini yöneten Spring Boot tabanlı stok mikroservisi.</p>
+              <h3 data-i18n="projects.stockTitle">Stok Yönetimi Mikroservisi</h3>
+              <p data-i18n="projects.stockText">Gerçek stok hareketlerini, satış süreçlerini ve güvenli kullanıcı erişimini yöneten Spring Boot tabanlı stok mikroservisi.</p>
               <ul class="project-points">
-                <li>Katmanlı mimari, DTO, validation, mapping ve global exception handling.</li>
-                <li>FIFO stok düşümü, batch izlenebilirliği ve ortalama maliyet hesaplama.</li>
-                <li>Keycloak/JWT ile authentication ve role-based authorization.</li>
-                <li>RabbitMQ düşük stok bildirimleri ve Swagger/OpenAPI dokümantasyonu.</li>
+                <li data-i18n="projects.stock1">Katmanlı mimari, DTO, validation, mapping ve global exception handling.</li>
+                <li data-i18n="projects.stock2">FIFO stok düşümü, batch izlenebilirliği ve ortalama maliyet hesaplama.</li>
+                <li data-i18n="projects.stock3">Keycloak/JWT ile authentication ve role-based authorization.</li>
+                <li data-i18n="projects.stock4">RabbitMQ düşük stok bildirimleri ve Swagger/OpenAPI dokümantasyonu.</li>
               </ul>
               <div class="tag-row"><span>Java</span><span>Spring Boot</span><span>Keycloak</span><span>RabbitMQ</span><span>Docker</span></div>
             </div>
@@ -214,13 +215,13 @@
             <div class="project-number">03</div>
             <div class="project-content">
               <span class="project-label">Full Stack · University System</span>
-              <h3>ÇAYGEN — Çay Fidanı İzleme Sistemi</h3>
-              <p>Çay fidanlarının kataloglanması, filtrelenmesi, yetkili kullanıcılar tarafından yönetilmesi ve görsel verilerinin takip edilmesi için geliştirilen full-stack platform.</p>
+              <h3 data-i18n="projects.caygenTitle">ÇAYGEN — Çay Fidanı İzleme Sistemi</h3>
+              <p data-i18n="projects.caygenText">Çay fidanlarının kataloglanması, filtrelenmesi, yetkili kullanıcılar tarafından yönetilmesi ve görsel verilerinin takip edilmesi için geliştirilen full-stack platform.</p>
               <ul class="project-points">
-                <li>SQL tabanlı ilişkisel veri modeli ve ASP.NET Core REST backend.</li>
-                <li>JWT authentication, rol bazlı yetkilendirme ve audit logging.</li>
-                <li>Gelişmiş filtreleme, detaylı fidan profilleri ve galeri yönetimi.</li>
-                <li>PDF kataloglarından Python ile veri çıkarımı ve dönüştürme.</li>
+                <li data-i18n="projects.caygen1">SQL tabanlı ilişkisel veri modeli ve ASP.NET Core REST backend.</li>
+                <li data-i18n="projects.caygen2">JWT authentication, rol bazlı yetkilendirme ve audit logging.</li>
+                <li data-i18n="projects.caygen3">Gelişmiş filtreleme, detaylı fidan profilleri ve galeri yönetimi.</li>
+                <li data-i18n="projects.caygen4">PDF kataloglarından Python ile veri çıkarımı ve dönüştürme.</li>
               </ul>
               <div class="tag-row"><span>ASP.NET Core</span><span>PostgreSQL</span><span>React</span><span>Tailwind</span><span>Python</span></div>
             </div>
@@ -233,24 +234,24 @@
           <article class="project-card compact">
             <div class="project-number">04</div>
             <span class="project-label">Parallel Programming</span>
-            <h3>Kitap Takas Platformu</h3>
-            <p>C++17 ile geliştirilen kitap takas uygulamasında arama, tür analizi ve benzerlik matrisi işlemlerini OpenMP ve MPI ile paralelleştirdim. Sıralı ve paralel sürümleri çok çekirdekli ve dağıtık ortamlarda karşılaştırdım.</p>
+            <h3 data-i18n="projects.bookTitle">Kitap Takas Platformu</h3>
+            <p data-i18n="projects.bookText">C++17 ile geliştirilen kitap takas uygulamasında arama, tür analizi ve benzerlik matrisi işlemlerini OpenMP ve MPI ile paralelleştirdim. Sıralı ve paralel sürümleri çok çekirdekli ve dağıtık ortamlarda karşılaştırdım.</p>
             <div class="tag-row"><span>C++17</span><span>OpenMP</span><span>MPI</span><span>CMake</span></div>
           </article>
 
           <article class="project-card compact">
             <div class="project-number">05</div>
             <span class="project-label">Simulation · UAV</span>
-            <h3>Dağıtık Sürü İHA Sistemi</h3>
-            <p>PX4 ve Gazebo kullanarak çoklu İHA simülasyon ortamı geliştirdim; otonom görev senaryolarını, sürü koordinasyonunu ve sistem bileşenleri arasındaki iletişimi test ettim.</p>
+            <h3 data-i18n="projects.uavTitle">Dağıtık Sürü İHA Sistemi</h3>
+            <p data-i18n="projects.uavText">PX4 ve Gazebo kullanarak çoklu İHA simülasyon ortamı geliştirdim; otonom görev senaryolarını, sürü koordinasyonunu ve sistem bileşenleri arasındaki iletişimi test ettim.</p>
             <div class="tag-row"><span>PX4</span><span>Gazebo</span><span>Linux</span><span>UAV</span></div>
           </article>
 
           <article class="project-card compact">
             <div class="project-number">06</div>
             <span class="project-label">Java · Data Structures</span>
-            <h3>Evcil Hayvan Bakım Hatırlatma Sistemi</h3>
-            <p>Bağlı listeler, sparse matrix, stack, queue, Heap Sort, Huffman, BFS/DFS, Hash Table, B+ Tree, KMP ve hashing yapılarını gerçek uygulama ihtiyaçlarında kullanan Java tabanlı bakım ve hatırlatma sistemi.</p>
+            <h3 data-i18n="projects.petTitle">Evcil Hayvan Bakım Hatırlatma Sistemi</h3>
+            <p data-i18n="projects.petText">Bağlı listeler, sparse matrix, stack, queue, Heap Sort, Huffman, BFS/DFS, Hash Table, B+ Tree, KMP ve hashing yapılarını gerçek uygulama ihtiyaçlarında kullanan Java tabanlı bakım ve hatırlatma sistemi.</p>
             <div class="tag-row"><span>Java</span><span>Algorithms</span><span>Data Structures</span></div>
           </article>
 
@@ -258,7 +259,7 @@
             <div class="project-number">07</div>
             <span class="project-label">Cryptography · Interactive</span>
             <h3>Cipher Master</h3>
-            <p>Sekiz klasik kriptografi algoritmasının şifreleme ve şifre çözme süreçlerini gerçek zamanlı olarak görselleştiren etkileşimli öğrenme aracı.</p>
+            <p data-i18n="projects.cipherText">Sekiz klasik kriptografi algoritmasının şifreleme ve şifre çözme süreçlerini gerçek zamanlı olarak görselleştiren etkileşimli öğrenme aracı.</p>
             <div class="tag-row"><span>Cryptography</span><span>JavaScript</span><span>Interactive UI</span></div>
           </article>
         </div>
@@ -267,10 +268,10 @@
 
     <section class="section skills" id="skills">
       <div class="section-shell">
-        <div class="section-heading"><h2>&lt;/Yeteneklerim&gt;</h2><span></span></div>
-        <p class="section-intro">Eski portfolyodaki teknoloji kutusu yapısını koruyarak güncel stack'imi kategorilere ayırdım.</p>
+        <div class="section-heading"><h2 data-i18n="skills.heading">&lt;/Yeteneklerim&gt;</h2><span></span></div>
+        <p class="section-intro" data-i18n="skills.intro">Eski portfolyodaki teknoloji kutusu yapısını koruyarak güncel stack'imi kategorilere ayırdım.</p>
 
-        <div class="skill-category"><h3>Programlama Dilleri</h3><div class="tech-stack-wrapper">
+        <div class="skill-category"><h3 data-i18n="skills.languages">Programlama Dilleri</h3><div class="tech-stack-wrapper">
           <div class="tech-stack-box"><img src="src/png/javalogo.png" alt="Java" /><span class="tooltip">JAVA</span></div>
           <div class="tech-stack-box"><img src="src/png/clogo.png" alt="C" /><span class="tooltip">C</span></div>
           <div class="tech-stack-box"><img src="src/png/cpplogo.png" alt="C++" /><span class="tooltip">C++</span></div>
@@ -279,7 +280,7 @@
           <div class="tech-stack-box"><img src="src/png/jslogo.png" alt="JavaScript" /><span class="tooltip">JAVASCRIPT</span></div>
         </div></div>
 
-        <div class="skill-category"><h3>Backend, API & Veritabanı</h3><div class="tech-stack-wrapper">
+        <div class="skill-category"><h3 data-i18n="skills.backend">Backend, API & Veritabanı</h3><div class="tech-stack-wrapper">
           <div class="tech-stack-box"><img src="src/png/spring.png" alt="Spring Boot" /><span class="tooltip">SPRING BOOT</span></div>
           <div class="tech-stack-box text-logo dotnet"><b>.NET</b><span class="tooltip">ASP.NET CORE</span></div>
           <div class="tech-stack-box text-logo"><b>EF</b><span class="tooltip">ENTITY FRAMEWORK CORE</span></div>
@@ -291,7 +292,7 @@
           <div class="tech-stack-box"><img src="src/png/mysql.png" alt="MySQL" /><span class="tooltip">SQL / MYSQL</span></div>
         </div></div>
 
-        <div class="skill-category"><h3>Frontend, DevOps & Araçlar</h3><div class="tech-stack-wrapper">
+        <div class="skill-category"><h3 data-i18n="skills.tools">Frontend, DevOps & Araçlar</h3><div class="tech-stack-wrapper">
           <div class="tech-stack-box"><img src="src/png/reactlogo.png" alt="React" /><span class="tooltip">REACT</span></div>
           <div class="tech-stack-box logo-wide"><img src="src/png/next.png" alt="Next.js" class="invert-on-dark" /><span class="tooltip">NEXT.JS</span></div>
           <div class="tech-stack-box"><img src="src/png/Tailwind.png" alt="Tailwind CSS" /><span class="tooltip">TAILWIND CSS</span></div>
@@ -307,22 +308,22 @@
   </main>
 
   <footer id="footer">
-    <button id="backToTop" class="back-to-top" aria-label="Başa dön">← BAŞA DÖN</button>
+    <button id="backToTop" class="back-to-top" aria-label="Başa dön" data-i18n="footer.backToTop">← BAŞA DÖN</button>
     <div class="footer-glow"></div>
     <div class="footer-container">
       <div class="footer-copy">
-        <span class="code-kicker">&lt;/İletişim&gt;</span>
-        <h2>Birlikte bir şeyler geliştirelim.</h2>
-        <p>Backend geliştirme, yazılım mühendisliği ve proje fırsatları için benimle iletişime geçebilirsin.</p>
+        <span class="code-kicker" data-i18n="footer.kicker">&lt;/İletişim&gt;</span>
+        <h2 data-i18n="footer.heading">Birlikte bir şeyler geliştirelim.</h2>
+        <p data-i18n="footer.text">Backend geliştirme, yazılım mühendisliği ve proje fırsatları için benimle iletişime geçebilirsin.</p>
         <p class="footer-email">mustafa.yanmaz.tr@gmail.com</p>
         <div class="social-links">
-          <a href="mailto:mustafa.yanmaz.tr@gmail.com"><img src="src/png/gmail.png" alt="" aria-hidden="true" />E-posta</a>
+          <a href="mailto:mustafa.yanmaz.tr@gmail.com"><img src="src/png/gmail.png" alt="" aria-hidden="true" /><span data-i18n="footer.email">E-posta</span></a>
           <a href="https://www.linkedin.com/in/mustafa-yanmaz" target="_blank" rel="noopener"><img src="src/png/linkedin.png" alt="" aria-hidden="true" />LinkedIn</a>
           <a href="https://github.com/mustafayanmaz" target="_blank" rel="noopener"><img src="src/png/githublogo.png" alt="" aria-hidden="true" class="invert-on-light" />GitHub</a>
         </div>
       </div>
       <div class="footer-avatar-container" aria-hidden="true">
-        <img src="src/png/avatarfooter2.png" alt="" class="footer-avatar-img" />
+        <img src="src/png/avatarfooter-animated-base.png" alt="" class="footer-avatar-img" />
         <div class="footer-avatar-face">
           <div class="footer-avatar-eye"><div class="footer-pupil"></div></div>
           <div class="footer-avatar-eye"><div class="footer-pupil"></div></div>
@@ -332,6 +333,6 @@
     <div class="footer-bottom"><span>Mustafa Yanmaz</span><span>© 2026 · mustafayanmaz.com</span></div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js?v=7"></script>
 </body>
 </html>
